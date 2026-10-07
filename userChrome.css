@@ -1,0 +1,8 @@
+@-moz-document url("chrome://browser/content/browser.xhtml") {
+  .titlebar-buttonbox-container,
+  .titlebar-buttonbox,
+  .titlebar-spacer[type="pre-buttons"],
+  .titlebar-spacer[type="post-buttons"] {
+    display: none !important;
+  }
+}
