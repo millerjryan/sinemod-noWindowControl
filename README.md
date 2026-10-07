@@ -1,0 +1,1 @@
+# sinemod-noWindowControl
