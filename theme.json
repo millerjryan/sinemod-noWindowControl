@@ -1,0 +1,13 @@
+{
+  "id": "sinemod-noWindowControl",
+  "name": "No Window Controls",
+  "description": "Hide the minimize, maximize, restore, and close buttons in Zen Browser.",
+  "author": "millerjryan",
+  "version": "1.0.0",
+  "homepage": "https://github.com/millerjryan/sinemod-noWindowControl",
+  "style": {
+    "chrome": "userChrome.css"
+  },
+  "tags": ["chrome", "minimal"],
+  "fork": ["zen"]
+}
