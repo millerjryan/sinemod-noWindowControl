@@ -2,7 +2,8 @@
 
 A CSS-only [Sine](https://github.com/CosmoCreeper/Sine) mod for Zen Browser
 that hides the minimize, maximize/restore, and close buttons, including
-their container and adjacent button spacers.
+their container and adjacent button spacers. Also collapses the unused
+window-control row in Single Toolbar mode and empty sidebar control rows.
 
 ## Install with Sine
 
@@ -18,6 +19,11 @@ Sine can install them using the repository name above.
 ## Behavior and limitations
 
 - Hides browser-drawn window controls on Windows, Linux, and macOS.
+- Removes the control-only row above the content in Single Toolbar mode
+  when the bookmarks toolbar is not present, and removes empty sidebar
+  control rows and their collapsed-sidebar offset.
+- Preserves rows containing bookmarks or custom toolbar buttons, and keeps
+  toolbar areas available while customizing. The address bar is not hidden.
 - Applies only to the main browser window, not web pages, dialogs, or
   picture-in-picture windows.
 - Does not change keyboard shortcuts, window-manager actions, or dragging

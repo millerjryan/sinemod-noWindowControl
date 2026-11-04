@@ -5,4 +5,22 @@
   .titlebar-spacer[type="post-buttons"] {
     display: none !important;
   }
+
+  /* Single-toolbar mode leaves a control-only row above the content. */
+  :root[zen-single-toolbar="true"]:not([customizing]):not([zen-has-bookmarks])
+    #zen-appcontent-navbar-wrapper:not(:has(#nav-bar, #urlbar-container)),
+  :root:not([customizing])
+    #zen-sidebar-top-buttons:not(:has(
+      #zen-sidebar-top-buttons-customization-target > *:not(#zen-sidebar-top-buttons-separator)
+    )):not(:has(#nav-bar, #urlbar-container)) {
+    display: none !important;
+  }
+
+  /* Zen offsets the collapsed sidebar to make room for window controls. */
+  :root:not([customizing]):not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"])[zen-right-side="true"]:not([zen-window-buttons-reversed="true"])
+    #navigator-toolbox,
+  :root:not([customizing]):not([zen-compact-mode="true"]):not([zen-sidebar-expanded="true"]):not([zen-right-side="true"])[zen-window-buttons-reversed="true"]
+    #navigator-toolbox {
+    margin-top: 0 !important;
+  }
 }

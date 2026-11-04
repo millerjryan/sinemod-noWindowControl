@@ -1,9 +1,9 @@
 {
   "id": "sinemod-noWindowControl",
   "name": "No Window Controls",
-  "description": "Hide the minimize, maximize, restore, and close buttons in Zen Browser.",
+  "description": "Hide Zen Browser's window controls and collapse their unused toolbar space.",
   "author": "millerjryan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/millerjryan/sinemod-noWindowControl",
   "style": {
     "chrome": "userChrome.css"
